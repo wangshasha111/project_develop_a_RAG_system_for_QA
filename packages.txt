@@ -1,0 +1,13 @@
+# System-level packages needed for deployment
+# These will be installed via apt-get on Streamlit Cloud
+
+# For PDF processing
+poppler-utils
+
+# For OCR (if needed)
+tesseract-ocr
+tesseract-ocr-chi-sim
+
+# For image processing
+libgl1-mesa-glx
+libglib2.0-0
