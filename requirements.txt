@@ -1,46 +1,40 @@
-# Streamlit Cloud Optimized Dependencies
-# For deployment to Streamlit Cloud - minimal but functional
+# Streamlit Cloud Compatible Dependencies
+# Relaxed version constraints for better compatibility
 
 # Core Web Framework
-streamlit>=1.32.0
-python-dotenv>=1.0.0
+streamlit
+python-dotenv
 
 # Image Processing
-pillow>=10.0.0
+pillow
 
-# LangChain Core (essential only)
-langchain==0.1.20
-langchain-core==0.1.45
-langchain-openai==0.0.8
-langchain-google-genai==1.0.1
-langchain-community==0.0.38
-langchain-chroma==0.1.1
+# LangChain Core
+langchain
+langchain-core
+langchain-openai
+langchain-google-genai
+langchain-community
+langchain-chroma
 
 # Vector Database
-chromadb>=0.4.24
+chromadb
 
 # AI Providers
-openai>=1.12.0
-google-generativeai>=0.4.0
-
-# Document Processing (lightweight alternatives)
-pypdf>=4.0.0
-markdown>=3.5.0
-beautifulsoup4>=4.12.0
-lxml>=5.0.0
+openai
+google-generativeai
 
 # Utilities
-numpy>=1.24.0
-requests>=2.31.0
-tqdm>=4.66.0
-tenacity>=8.2.0
+numpy
+requests
+tqdm
+tenacity
 
-# NLP (minimal)
-nltk>=3.8.1
+# NLP
+nltk
 
 # Data Handling
-pandas>=2.0.0
+pandas
 
-# Pydantic for data validation
-pydantic>=2.0.0
-pydantic-settings>=2.0.0
+# Pydantic
+pydantic
+pydantic-settings

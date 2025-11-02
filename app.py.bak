@@ -446,6 +446,7 @@ def render_chat_interface():
                                     copy_content_key = f"copy_content_{idx}_{text_idx}"
                                     if st.button("📋 Copy Content", key=copy_content_key, help="Copy original content"):
                                         try:
+                                            pyperclip.copy(text_content)
                                             st.session_state[f"content_copied_{idx}_{text_idx}"] = True
                                             st.rerun()
                                         except Exception as e:
@@ -456,6 +457,7 @@ def render_chat_interface():
                                         copy_summary_key = f"copy_summary_{idx}_{text_idx}"
                                         if st.button("📋 Copy Summary", key=copy_summary_key, help="Copy AI summary"):
                                             try:
+                                                pyperclip.copy(text_summary)
                                                 st.session_state[f"summary_copied_{idx}_{text_idx}"] = True
                                                 st.rerun()
                                             except Exception as e:
@@ -507,6 +509,7 @@ def render_chat_interface():
                                     copy_table_key = f"copy_table_{idx}_{table_idx}"
                                     if st.button("📋 Copy Table", key=copy_table_key, help="Copy table content"):
                                         try:
+                                            pyperclip.copy(table_content)
                                             st.session_state[f"table_copied_{idx}_{table_idx}"] = True
                                             st.rerun()
                                         except Exception as e:
@@ -517,6 +520,7 @@ def render_chat_interface():
                                         copy_table_summary_key = f"copy_table_summary_{idx}_{table_idx}"
                                         if st.button("📋 Copy Summary", key=copy_table_summary_key, help="Copy table summary"):
                                             try:
+                                                pyperclip.copy(table_summary)
                                                 st.session_state[f"table_summary_copied_{idx}_{table_idx}"] = True
                                                 st.rerun()
                                             except Exception as e:
@@ -571,6 +575,7 @@ def render_chat_interface():
                                                key=copy_img_summary_key, 
                                                help="Copy AI-generated image description"):
                                         try:
+                                            pyperclip.copy(img_summary)
                                             st.session_state[f"img_summary_copied_{idx}_{img_idx}"] = True
                                             st.rerun()
                                         except Exception as e:
