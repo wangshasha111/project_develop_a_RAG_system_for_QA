@@ -37,3 +37,5 @@ nltk>=3.8
 
 # For clipboard functionality
 pyperclip>=1.8.2
+
+pypdf

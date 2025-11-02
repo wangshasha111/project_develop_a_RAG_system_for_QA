@@ -10,6 +10,7 @@ pillow>=10.0.0
 numpy>=1.24.0
 requests>=2.31.0
 
+pypdf
 # 注意：此配置仅支持调试模式
 # Note: This setup only supports debug mode
 # 要使用完整功能，请安装 requirements.txt
