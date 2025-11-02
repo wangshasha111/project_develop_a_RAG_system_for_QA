@@ -35,8 +35,9 @@ nltk
 # Data Handling
 pandas
 
-# HTML to Markdown Conversion
+# Document Processing
 htmltabletomd
+pypdf
 
 # Pydantic
 pydantic
